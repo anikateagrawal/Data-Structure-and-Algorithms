@@ -1,3 +1,5 @@
+package array_questions;
+
 import java.util.Scanner;
 
 public class Student {
@@ -22,7 +24,7 @@ public class Student {
         return name;
     }
 }
-class Max_Min
+class DuplicatesMax_Min
 {
     public static void main(String[] args) {
         Student ar[]=new Student[10];

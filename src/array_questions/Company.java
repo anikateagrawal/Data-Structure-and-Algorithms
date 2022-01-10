@@ -1,3 +1,5 @@
+package array_questions;
+
 import java.util.Scanner;
 
 public class Company {
