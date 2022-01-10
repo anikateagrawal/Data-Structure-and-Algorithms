@@ -25,7 +25,7 @@ public class Student {
 class Max_Min
 {
     public static void main(String[] args) {
-        Student ar[]=new Student[3];
+        Student ar[]=new Student[10];
         Scanner sc=new Scanner(System.in);
         for (int i = 0; i <ar.length ; i++) {
             System.out.println("Enter name,roll no,marks");
