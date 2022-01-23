@@ -1,5 +1,21 @@
 package recursion2;
 
-public class Replace {
+import java.util.Arrays;
+import java.util.Scanner;
 
+public class Replace {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s= sc.nextLine();
+        char c1 = sc.next().charAt(0);
+        char c2=sc.next().charAt(0);
+        System.out.println(replace(s,c1,c2,0));
+    }
+    public static String replace(String s,char c1,char c2,int index)
+    {
+        if(index==s.length())return "";
+        String ss=replace(s,c1,c2,index+1);
+        if(s.charAt(index)==c1)return c2+ss;
+        else return s.charAt(index)+ss;
+    }
 }
