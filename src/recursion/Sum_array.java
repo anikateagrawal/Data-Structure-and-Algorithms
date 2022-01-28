@@ -1,3 +1,18 @@
+/*
+Q4. Write a program to find and return the sum of all elements of the array. Do this recursively.
+
+Sample Input 1 :
+3
+9 8 9
+Sample Output 1 :
+26
+Sample Input 2 :
+3
+4 2 1
+Sample Output 2 :
+7
+
+ */
 package recursion;
 
 import java.util.Scanner;

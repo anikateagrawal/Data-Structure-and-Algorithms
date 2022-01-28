@@ -1,3 +1,21 @@
+/*
+Q. Write a program to create a class (Employee) with the information given below.
+
+1. emp_id
+2. name
+	1. first_name
+	2. last_name
+3. address
+    1. area
+    2. city
+    3. state
+4. salary
+5. designation
+
+Read and print the data by creating  Employee array
+
+Hint:- aggregation / containership
+ */
 package array2;
 
 import java.util.Scanner;

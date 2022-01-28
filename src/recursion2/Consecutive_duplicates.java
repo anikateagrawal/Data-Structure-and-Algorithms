@@ -1,3 +1,14 @@
+/*
+Remove Duplicates Recursively
+
+Q. In a string S, remove consecutive duplicates from it recursively.
+
+Sample Input 1 :
+aabccba
+Sample Output 1 :
+abcba
+
+ */
 package recursion2;
 
 import java.util.Scanner;

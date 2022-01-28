@@ -1,3 +1,13 @@
+/*
+Q. Create an array of 10 students and print the record of those students who got the highest marks and who got minimum marks. The structure of student class is as follows
+class Student
+{
+	private int rollno;
+	private int marks
+	private String name;
+}
+// create constructor or getter and setter methods as per need
+ */
 package array_questions;
 
 import java.util.Scanner;

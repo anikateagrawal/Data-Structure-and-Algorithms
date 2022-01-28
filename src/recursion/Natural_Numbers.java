@@ -1,3 +1,11 @@
+/*
+Q2. Write a program to print numbers from 1 to n in increasing order recursively.
+
+Sample Input 1 :
+ 6
+Sample Output 1 :
+1 2 3 4 5 6
+ */
 package recursion;
 
 import java.util.Scanner;

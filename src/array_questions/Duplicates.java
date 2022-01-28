@@ -1,3 +1,6 @@
+/*
+Q. Write a program to find whether the array of integers contains a duplicate number. if yes print the location where duplicate numbers are found.
+ */
 package array_questions;
 
 import java.util.Scanner;

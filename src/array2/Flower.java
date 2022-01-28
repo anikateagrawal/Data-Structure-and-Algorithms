@@ -1,3 +1,6 @@
+/*
+Q. Write a Java class, Flower, that has three instance variables of type String, int, and float, which respectively represent the name of the flower, its number of petals, and price. Your class must include a constructor method that initialises each variable to an appropriate value, and your class should include methods for setting the value of each type, and getting the value of each type. Create an array of 5 Flower objects and print the value.
+ */
 package array2;
 
 import java.util.Scanner;
