@@ -220,7 +220,6 @@ class Designer
                 ", location='" + location + '\'' +
                 ", email='" + email + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", lastLeadAssigned='" + lastLeadAssigned + '\'' +
                 ", portfolio='" + portfolio + '\'' +
                 ", accountId='" + accountId + '\'' +
                 ", projectTypeIds=" + projectTypeIds +
