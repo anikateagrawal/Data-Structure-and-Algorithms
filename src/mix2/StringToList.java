@@ -1,3 +1,10 @@
+/*
+Q. Enter a string from user and store each character of a string in different nodes of a linked list and print the values
+
+Input :  neeraj
+
+Output :  n -> e -> e -> r -> a -> j
+ */
 package mix2;
 
 import java.util.Scanner;
