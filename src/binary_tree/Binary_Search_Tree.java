@@ -7,29 +7,42 @@ public class Binary_Search_Tree {
     public void insert(int data)
     {
         Binary_Node n=new Binary_Node(data);
-        if(root==null)
-        {
-            root=n;
-        }
-        else
-        {
-            add(root,n);
-        }
+        root=add(root,n);
     }
-    public boolean add(Binary_Node root,Binary_Node n)
+    public Binary_Node add(Binary_Node root,Binary_Node n)
     {
-        if(root==null)return true;
+        if(root==null)
+            return n;
         if(root.data>n.data) {
-            boolean r = add(root.left, n);
-            if (r == true) root.left = n;
-            return false;
+            root.left=add(root.left, n);
         }
         else if(root.data<n.data)
         {
-            boolean r=add(root.right,n);
-            if (r==true)root.right=n;
-            return false;
-        }return false;
+            root.right=add(root.right,n);
+        }
+        return root;
+    }
+    public Binary_Node deleteNode(Binary_Node root, int key) {
+        if(root==null)return root;
+        if(root.data==key)
+        {
+            if(root.left==null && root.right==null)return null;
+            else if(root.right==null)
+                return root.left;
+            else if(root.left==null)return root.right;
+            else{
+                root.data=min(root.right);
+                root.right=deleteNode(root.right,root.data);
+            }
+        }
+        else if(key>root.data)root.right=deleteNode(root.right,key);
+        else if(key<root.data)root.left=deleteNode(root.left,key);
+        return root;
+    }
+    public int min(Binary_Node root)
+    {
+        if(root.left==null)return root.data;
+        return min(root.left);
     }
     public void inOrderTraversal(Binary_Node root)
     {
