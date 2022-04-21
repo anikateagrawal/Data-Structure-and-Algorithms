@@ -47,5 +47,29 @@ public class Gmap {
             }
         }
     }
-
+    public void ssspByBfs(Emp source)
+    {
+        Queue<Emp> bfs=new LinkedList<>();
+        bfs.add(source);
+        Map<Emp,Integer> dis=new HashMap<>();
+        for (Emp i:gmap.keySet()
+             ) {
+            dis.put(i, Integer.MAX_VALUE);
+        }
+        dis.put(source,0);
+        while(!bfs.isEmpty())
+        {
+            Emp front=bfs.poll();
+            LinkedList<Emp> n=gmap.get(front);
+            for (Emp i:n ) {
+                if(dis.get(i)==Integer.MAX_VALUE)
+                {
+                    bfs.add(i);
+                    int distance=dis.get(front)+1;
+                    dis.put(i,distance);
+                    System.out.println("Distance of "+i+" from source "+source+" is "+distance);
+                }
+            }
+        }
+    }
 }

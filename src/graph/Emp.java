@@ -57,7 +57,7 @@ public class Emp {
         gmap.add(e3,e4,true);
         gmap.bfsTraverse(e1);
         gmap.print();
-
+        gmap.ssspByBfs(e2);
         emp=new ArrayList<>();
         emp.add(e1);emp.add(e2);emp.add(e3);emp.add(e4);
 
