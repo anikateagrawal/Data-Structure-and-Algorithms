@@ -1,4 +1,4 @@
-package msp;
+package mst;
 
 import java.util.Arrays;
 import java.util.Scanner;
