@@ -27,7 +27,7 @@ public class Dijkstra {
                 }
             }
         }
-        // printing the minimum spanning tree
+
         System.out.println("Distance from source "+src+" to destination ");
         for (int i = 0; i <n ; i++) {
                 System.out.println(i+ " is "+ weight[i]);
